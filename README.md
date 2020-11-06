@@ -3,6 +3,7 @@
 Convenience action for using current branch name.
 
 ## Usage
+
 ```
 name: build
 on: push
@@ -13,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci
-    - uses: nelonoel/branch-name@v1
+    - uses: levelsoftware/branch-name@1.0
     # Use branch name for whatever purpose
     - run: echo ${BRANCH_NAME}
 ```
